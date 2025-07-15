@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Ad - EarnMoney</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+    
+    <div class="container">
+        <div class="dashboard">
+            <div class="dashboard-header">
+                <h2>🎥 Watch Advertisement Video</h2>
+                <p>Watch the full video to earn 40 points!</p>
+            </div>
+            
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <div style="text-align: center;">
+                        <div style="font-size: 4rem; margin-bottom: 20px;">📺</div>
+                        <div>Advertisement Video Playing...</div>
+                        <div style="margin-top: 10px; font-size: 0.9rem; opacity: 0.7;">Please wait for the video to complete</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-controls">
+                <div id="timer" class="timer">Loading video...</div>
+                
+                <button id="confirmBtn" class="btn btn-success" onclick="confirmAdWatch()" style="display: none;">
+                    ✅ Confirm & Earn 40 Points
+                </button>
+                
+                <button class="btn btn-secondary" onclick="goToDashboard()" style="margin-top: 15px;">
+                    ← Back to Dashboard
+                </button>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">⏱️</div>
+                    <h3>30 Second Timer</h3>
+                    <p>Watch the complete 30-second advertisement to unlock your points</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Instant Rewards</h3>
+                    <p>Earn 40 points immediately after confirming you watched the full video</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Repeat & Earn</h3>
+                    <p>You can watch multiple videos to accumulate more points quickly</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="message" class="message"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

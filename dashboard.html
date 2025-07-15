@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - EarnMoney</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+    
+    <div class="container">
+        <div class="dashboard">
+            <div class="dashboard-header">
+                <h2 id="welcomeMessage">Welcome to EarnMoney!</h2>
+            </div>
+            
+            <div class="points-display">
+                <h3 id="pointsDisplay">0</h3>
+                <p>Total Points Earned</p>
+                <small>10,000 points = $1 USD</small>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="action-btn btn-success" onclick="goToWatchAd()">
+                    🎥 Watch Ad Video<br>
+                    <small>Earn 40 Points</small>
+                </button>
+                
+                <button class="action-btn btn-warning" onclick="goToVisitLink()">
+                    🔗 Visit Shortened Link<br>
+                    <small>Earn 25 + 40 = 65 Points</small>
+                </button>
+                
+                <button id="withdrawBtn" class="action-btn btn-primary" onclick="goToWithdraw()" disabled>
+                    💰 Need more points to withdraw
+                </button>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Your Progress</h3>
+                    <p>Keep watching ads and visiting links to reach the withdrawal threshold of 10,000 points!</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Quick Earnings</h3>
+                    <p>Each video takes only 30 seconds to watch. Start earning now!</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Goal Tracker</h3>
+                    <p>Track your progress towards your first withdrawal. Every point counts!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="message" class="message"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

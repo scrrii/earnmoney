@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Link - EarnMoney</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+    
+    <div class="container">
+        <div class="dashboard">
+            <div class="dashboard-header">
+                <h2>🔗 Shortened Link Redirect</h2>
+                <p>Please wait while we redirect you to the shortened link...</p>
+            </div>
+            
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <div style="text-align: center;">
+                        <div style="font-size: 4rem; margin-bottom: 20px;">🌐</div>
+                        <div>Connecting to Ouo.io...</div>
+                        <div style="margin-top: 20px;">
+                            <div style="display: inline-block; width: 40px; height: 40px; border: 4px solid #f3f3f3; border-top: 4px solid #667eea; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+                        </div>
+                        <div style="margin-top: 15px; font-size: 0.9rem; opacity: 0.7;">You will be redirected automatically</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-controls">
+                <div class="timer">Redirecting in 3 seconds...</div>
+                
+                <button class="btn btn-secondary" onclick="goToDashboard()" style="margin-top: 15px;">
+                    ← Cancel & Return to Dashboard
+                </button>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Step 1: Link Visit</h3>
+                    <p>First, you'll visit the shortened link and skip the ads (usually 5-15 seconds)</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🎥</div>
+                    <h3>Step 2: Watch Video</h3>
+                    <p>After the link, you'll watch another 30-second video advertisement</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">💰</div>
+                    <h3>Step 3: Earn 65 Points</h3>
+                    <p>Complete both steps to earn 25 points (link) + 40 points (video) = 65 total points</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="message" class="message"></div>
+    
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    
+    <script src="script.js"></script>
+</body>
+</html>

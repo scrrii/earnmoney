@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Video - EarnMoney</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+    
+    <div class="container">
+        <div class="dashboard">
+            <div class="dashboard-header">
+                <h2>🎥 Bonus Video After Link</h2>
+                <p>Great! You've completed the link visit. Now watch this video to earn your full reward!</p>
+            </div>
+            
+            <div class="points-display" style="margin-bottom: 30px;">
+                <h3>25 Points Already Earned!</h3>
+                <p>From visiting the shortened link</p>
+                <small>Watch the video below to earn 40 more points (65 total)</small>
+            </div>
+            
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <div style="text-align: center;">
+                        <div style="font-size: 4rem; margin-bottom: 20px;">📺</div>
+                        <div>Bonus Advertisement Video Playing...</div>
+                        <div style="margin-top: 10px; font-size: 0.9rem; opacity: 0.7;">Complete this video to earn 40 additional points</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-controls">
+                <div id="timer" class="timer">Loading video...</div>
+                
+                <button id="confirmBtn" class="btn btn-success" onclick="confirmLinkVideo()" style="display: none;">
+                    ✅ Confirm & Earn 65 Points Total (25 + 40)
+                </button>
+                
+                <button class="btn btn-secondary" onclick="goToDashboard()" style="margin-top: 15px;">
+                    ← Back to Dashboard
+                </button>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">✅</div>
+                    <h3>Link Completed</h3>
+                    <p>You've successfully visited the shortened link and earned 25 points</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Bonus Video</h3>
+                    <p>Watch this 30-second bonus video to earn an additional 40 points</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">💎</div>
+                    <h3>Maximum Reward</h3>
+                    <p>Complete this step to earn the full 65 points - our highest single reward!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="message" class="message"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
